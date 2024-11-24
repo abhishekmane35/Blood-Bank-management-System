@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Bank Management System</title>
+    <link rel="stylesheet" href="bloodbank.css">
+   <!-- <a href="blood.html"target="Donar List">Donar page</a> -->
+</head>
+<body>
+    <div class="container">
+        <h1>Blood Bank Management System</h1>
+
+        <!-- Donor Registration Form -->
+        <div class="form-section">
+            <h2>Donor Registration</h2>
+            <form id="donorForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+
+                <label for="bloodGroup">Blood Group:</label>
+                <select id="bloodGroup" required>
+                    <option value="A+">A+</option>
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B-">B-</option>
+                    <option value="AB+">AB+</option>
+                    <option value="AB-">AB-</option>
+                    <option value="O+">O+</option>
+                    <option value="O-">O-</option>
+                </select>
+
+                <label for="contact">Contact Number:</label>
+                <input type="text" id="contact" required>
+
+                <button type="submit">Register Donor</button>
+                <!--<button type="reset"> Reset the form</button>-->
+            </form>
+        </div>
+
+        <!-- Display Donors -->
+        <div class="list-section">
+            <h2>Donors List</h2>
+            <ul id="donorList"></ul>
+        </div>
+
+        <!-- Blood Inventory -->
+        <div class="inventory-section">
+            <h2>Blood Inventory</h2>
+            <ul id="inventoryList"></ul>
+        </div>
+
+        <button type="reset" style="color:green;color:white"> Reset form</button>
+    </div>
+
+    <script src="bloodbank.js"></script> 
+</body>
+</html>
